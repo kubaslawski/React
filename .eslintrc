@@ -1,0 +1,87 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "project": "./tsconfig.app.json"
+  },
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "airbnb",
+    "prettier"
+  ],
+  "plugins": [
+    "@typescript-eslint",
+    "prettier",
+    "unused-imports"
+  ],
+  "rules": {
+    "prettier/prettier": [
+      "error"
+    ],
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".js",
+          ".jsx",
+          ".ts",
+          ".tsx"
+        ]
+      }
+    ],
+    "react/button-has-type": "off",
+    "import/named": 0,
+    "no-console": "warn",
+    "no-unused-vars": "off",
+    "import/no-self-import": "off",
+    "import/no-cycle": "off",
+    "import/no-relative-packages": "off",
+    "import/no-named-as-default-member": "off",
+    "import/no-useless-path-segments": "off",
+    "import/order": "off",
+    "import/no-duplicates": "off",
+    "arrow-body-style": 0,
+    "react/prop-types": 0,
+    "no-undef": 0,
+    "no-underscore-dangle": 0,
+    "no-shadow": "off",
+    "import/no-unresolved": 0,
+    "import/extensions": 0,
+    "import/no-named-as-default": 0,
+    "import/imports-first": [
+      "error",
+      "absolute-first"
+    ],
+    "import/newline-after-import": 1,
+    "import/no-extraneous-dependencies": [
+      "off",
+      {
+        "devDependencies": true,
+        "optionalDependencies": true,
+        "peerDependencies": true
+      }
+    ],
+    "import/prefer-default-export": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "react/jsx-props-no-spreading": 0,
+    "no-restricted-exports": 0,
+    "react/function-component-definition": 0,
+    "react/require-default-props": "off",
+    "react/react-in-jsx-scope": "off",
+    "@typescript-eslint/no-confusing-non-null-assertion": "error",
+    "@typescript-eslint/no-duplicate-enum-values": "error",
+    "@typescript-eslint/no-invalid-void-type": "error",
+    "@typescript-eslint/no-mixed-enums": "error",
+    "@typescript-eslint/no-non-null-asserted-nullish-coalescing": "error",
+    "@typescript-eslint/no-non-null-asserted-optional-chain": "error",
+    "@typescript-eslint/no-unnecessary-condition": "error",
+    "@typescript-eslint/no-unnecessary-type-arguments": "error",
+    "@typescript-eslint/no-unsafe-argument": "error",
+    "@typescript-eslint/no-unsafe-enum-comparison": "error",
+    "@typescript-eslint/no-unsafe-return": "error",
+    "@typescript-eslint/non-nullable-type-assertion-style": "error",
+    "radix": "off"
+  }
+}
